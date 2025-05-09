@@ -1,8 +1,18 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+// Log files in the 'views' directory
+fs.readdir(path.join(__dirname, 'views'), (err, files) => {
+    if (err) {
+        console.error('Error reading directory:', err);
+    } else {
+        console.log('Files in views directory:', files);
+    }
+});
 
 // Serve static files
 app.use(express.static(path.join(__dirname, 'views')));
