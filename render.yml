@@ -2,11 +2,13 @@ services:
   - type: web
     name: chapbetips
     env: node
-    buildCommand: "yarn build" # Au "npm run build" kama hutumii Yarn
-    startCommand: "yarn start" # Au "npm start" kama hutumii Yarn
+    buildCommand: "" # Hakuna hatua ya build kwa mradi huu
+    startCommand: "node app.js"
     plan: free
     region: oregon # Badilisha kulingana na eneo unalotaka
     runtime: node
     envVars:
       - key: NODE_ENV
         value: production
+      - key: DB_CONNECTION
+        value: <your-database-connection-string>
