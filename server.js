@@ -2,15 +2,17 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Serve static files
 app.use(express.static(path.join(__dirname, 'src/views')));
 
+// Default route
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'src/views/dashboard.html'));
 });
 
+// Start server
 app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
+    console.log(`Server running on http://localhost:${PORT}`);
 });
