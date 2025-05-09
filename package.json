@@ -2,9 +2,9 @@
   "name": "registration-login-system",
   "version": "1.0.0",
   "description": "A registration and login system with manual payment processing and activation keys.",
-  "main": "src/app.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node app.js",
     "build": "echo 'No build step required'"
   },
   "dependencies": {
@@ -17,6 +17,6 @@
   "devDependencies": {
     "nodemon": "^2.0.7"
   },
-  "author": "Your Name",
-  "license": "ISC"
+  "author": "Peterjoram37",
+  "license": "MIT"
 }
