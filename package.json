@@ -18,5 +18,6 @@
     "nodemon": "^2.0.7"
   },
   "author": "Peterjoram37",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": []
 }
