@@ -4,8 +4,7 @@
   "description": "A registration and login system with manual payment processing and activation keys.",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "echo 'No build step required for static HTML'"
+    "start": "node server.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
