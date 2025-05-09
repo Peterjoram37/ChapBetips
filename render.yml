@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: chapbetips
+    env: node
+    buildCommand: "yarn build" # Au "npm run build" kama hutumii Yarn
+    startCommand: "yarn start" # Au "npm start" kama hutumii Yarn
+    plan: free
+    region: oregon # Badilisha kulingana na eneo unalotaka
+    runtime: node
+    envVars:
+      - key: NODE_ENV
+        value: production
